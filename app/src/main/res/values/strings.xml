@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">FinanceFit</string>
+    <string name="slider_text_1">Manage your finance</string>
+    <string name="slider_desc_1">Take control of your finances and enjoy the freedom it brings. Keep track of your spending, and avoid unwanted expenses.</string>
+    <string name="skip">skip</string>
+    <string name="slider_text_2">Make your budget</string>
+    <string name="slider_desc_2">Create a precise monthly budget to guarantee responsible financial management. By doing so, you’ll maximize your earning potential.</string>
+    <string name="slider_text_3">Organize and track your spending daily</string>
+    <string name="slider_desc_3">Create spending categories to organize your expenses. Easily keep track of your spending as they happen.</string>
+    <string name="next">Next</string>
+    <string name="credit_card">credit_card</string>
 </resources>
