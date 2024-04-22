@@ -9,4 +9,5 @@
     <string name="slider_desc_3">Create spending categories to organize your expenses. Easily keep track of your spending as they happen.</string>
     <string name="next">Next</string>
     <string name="credit_card">credit_card</string>
+    <string name="login_text">Hey you are back, fill in your details to get back in</string>
 </resources>

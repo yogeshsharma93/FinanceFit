@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome Back"
+        android:textColor="#2C14DD"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/login_text"
+        android:textColor="@color/black"
+        />
+
+    <EditText
+        android:id="@+id/login_username"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="50dp"
+        android:hint="Username"
+        android:paddingStart="20dp"
+        android:background="@drawable/border_signup"
+        android:drawableLeft="@drawable/baseline_person_pin_24"
+        android:drawablePadding="10dp"
+        />
+
+    <EditText
+        android:id="@+id/login_password"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+        android:paddingStart="20dp"
+        android:background="@drawable/border_signup"
+        android:drawableLeft="@drawable/baseline_lock_24"
+        android:drawablePadding="10dp"
+        android:inputType="textPassword"
+        />
+
+    <Button
+        android:id="@+id/login_button"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Sign In"
+        android:textAllCaps="false"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@drawable/custom_button"/>
+
+    <TextView
+        android:id="@+id/signup_redirect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Don't have an account? SignUp"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:paddingStart="15dp"
+        android:textSize="15sp"
+        />
+
+</LinearLayout>
