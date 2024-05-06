@@ -10,4 +10,6 @@
     <string name="next">Next</string>
     <string name="credit_card">credit_card</string>
     <string name="login_text">Hey you are back, fill in your details to get back in</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

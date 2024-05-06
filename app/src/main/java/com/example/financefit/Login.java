@@ -96,7 +96,7 @@ public class Login extends AppCompatActivity {
                     String passwordFromDB = snapshot.child(userUsername).child("password").getValue(String.class);
                     if (passwordFromDB.equals(userPassword)) {
                         loginUsername.setError(null);
-                        Intent intent = new Intent(Login.this, Home.class);
+                        Intent intent = new Intent(Login.this, FrameLayout.class);
                         startActivity(intent);
                     } else {
                         loginPassword.setError("Invalid credentials");

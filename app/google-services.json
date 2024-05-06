@@ -1,13 +1,13 @@
 {
   "project_info": {
-    "project_number": "279855725314",
-    "project_id": "financefit-e0314",
-    "storage_bucket": "financefit-e0314.appspot.com"
+    "project_number": "912529428039",
+    "project_id": "financefit-2cfd7",
+    "storage_bucket": "financefit-2cfd7.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:279855725314:android:c3f28ec0e581c34907a01b",
+        "mobilesdk_app_id": "1:912529428039:android:5ee262d721138862c32b62",
         "android_client_info": {
           "package_name": "com.example.financefit"
         }
@@ -15,7 +15,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyAgxjvQaKX6PIuVkYlZz--Hvj2WdNtgyOw"
+          "current_key": "AIzaSyC7Y-7eSYvxMtsA7SwoHuJrSEtIxEHsiSw"
         }
       ],
       "services": {
