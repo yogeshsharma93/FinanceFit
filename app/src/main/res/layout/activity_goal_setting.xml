@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/title_Goal_Setting"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Set Your Financial Goals"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#432DEC"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"/>
+
+    <!-- Top half for goal addition and detail entering -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#432DEC"
+            android:padding="16dp">
+
+            <!-- Goal Entry Section -->
+            <LinearLayout
+                android:id="@+id/layoutGoalEntry"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/editTextGoalName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Goal Name" />
+
+                <EditText
+                    android:id="@+id/editTextGoalDeadline"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Enter Deadline (DD/MM/YYYY)" />
+
+                <EditText
+                    android:id="@+id/editTextAmountSaved"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Amount Saved in Rs."
+                    android:inputType="numberDecimal" />
+
+                <EditText
+                    android:id="@+id/editTextGoalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Goal Amount in Rs."
+                    android:inputType="numberDecimal" />
+            </LinearLayout>
+
+            <!-- Button to Add More Goals -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAddGoal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_background"
+                android:layout_marginTop="20dp"
+                android:text="Add Goals"
+                android:textSize="25sp"
+                android:onClick="onAddGoalButtonClick" />
+        </LinearLayout>
+    </ScrollView>
+
+    <!-- Layout to display entered data -->
+    <LinearLayout
+        android:id="@+id/layoutEnteredData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+    </LinearLayout>
+</LinearLayout>

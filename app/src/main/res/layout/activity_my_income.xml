@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2C14DD">
+
+    <TextView
+        android:id="@+id/tv_page_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="My Income"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choose a Income Source"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center_vertical"/>
+
+        <!-- Layout for radio buttons -->
+        <GridLayout
+            android:id="@+id/grid_buttons"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="4"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_marginTop="20dp">
+
+            <!-- Replace AppCompatButton with RadioButton -->
+            <!-- Example: -->
+            <RadioButton
+                android:id="@+id/salary_button"
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:text="Salary"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:drawableRight="@drawable/salary"
+                android:drawablePadding="2dp"
+                android:background="@drawable/rounded_button"
+                android:layout_gravity="fill_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/freelance_button"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:text="Freelance"
+                android:textStyle="bold"
+                android:textSize="13sp"
+                android:drawableRight="@drawable/freelance"
+                android:drawablePadding="2dp"
+                android:background="@drawable/rounded_button"
+                android:layout_gravity="fill_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/business_button"
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:text="Business"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:drawableRight="@drawable/business_income"
+                android:drawablePadding="2dp"
+                android:background="@drawable/rounded_button"
+                android:layout_gravity="fill_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/rental_button"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:text="Rental"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:drawableRight="@drawable/rental_income"
+                android:drawablePadding="2dp"
+                android:background="@drawable/rounded_button"
+                android:layout_gravity="fill_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/loan_button"
+                android:layout_width="190dp"
+                android:layout_height="90dp"
+                android:text="Loan"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:drawableRight="@drawable/debt"
+                android:background="@drawable/rounded_button"
+                android:layout_gravity="fill_horizontal"/>
+
+            <RadioButton
+                android:id="@+id/profits_button"
+                android:layout_width="180dp"
+                android:layout_height="90dp"
+                android:text="Profits"
+                android:textStyle="bold"
+                android:textSize="15sp"
+                android:drawableRight="@drawable/profit"
+                android:drawablePadding="2dp"
+                android:background="@drawable/rounded_button"
+                android:layout_gravity="fill_horizontal"/>
+        </GridLayout>
+
+        <RadioButton
+            android:id="@+id/any_other_source_button"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:text="Any Other Source"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:background="@drawable/rounded_button"
+            android:gravity="center"/>
+
+        <!-- Radio Buttons for frequency -->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+
+            android:layout_marginTop="20dp">
+
+            <RadioButton
+                android:id="@+id/radio_annual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Annually" />
+
+            <RadioButton
+                android:id="@+id/radio_month"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Monthly" />
+
+            <RadioButton
+                android:id="@+id/radio_week"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Weekly" />
+
+            <RadioButton
+                android:id="@+id/radio_day"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="Daily" />
+
+            <!-- Add more radio buttons as needed -->
+
+        </RadioGroup>
+
+        <!-- EditText for amount -->
+        <EditText
+            android:id="@+id/et_amount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Amount in Rs."
+            android:inputType="numberDecimal" />
+
+        <!-- Save Button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="#2C14DD"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:text="Save" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,14 +1,291 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ExpenseFragment">
+    android:background="@android:color/white"
+    tools:context=".MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Text View -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/Expenses"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Expenses"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FF0000FF"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"/>
 
-</FrameLayout>
+
+    <ImageButton
+        android:id="@+id/myIconButton"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/Expenses"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="-51dp"
+        android:background="@android:color/transparent"
+        android:scaleType="fitCenter"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/essential"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Expenses"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Essential"
+        android:textColor="#181818"
+        android:textSize="28sp"
+        android:textStyle="normal" />
+
+    <ImageButton
+        android:id="@+id/myIconbutton"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/Expenses"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+
+        android:layout_marginEnd="38dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/right_arrow"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/essential"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/insurance"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/insurance_category" />
+
+        <!-- Additional Image Buttons -->
+        <ImageButton
+            android:id="@+id/education"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/education" />
+
+        <ImageButton
+            android:id="@+id/ration"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ration" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/routine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Routine"
+        android:textColor="#181818"
+        android:textSize="28sp"
+        android:textStyle="normal" />
+
+    <ImageButton
+        android:id="@+id/myIconbutton2"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+
+        android:layout_marginEnd="42dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/right_arrow"
+        android:scaleType="fitCenter"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/routine"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/bills"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/bills" />
+
+        <!-- Additional Image Buttons -->
+        <ImageButton
+            android:id="@+id/servicing"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/servicing" />
+
+        <ImageButton
+            android:id="@+id/gym"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/gym" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/leisure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Lesiure"
+        android:textColor="#181818"
+        android:textSize="28sp"
+        android:textStyle="normal" />
+
+    <ImageButton
+        android:id="@+id/myIconbutton3"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/linearLayout2"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-2dp"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="48dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/right_arrow" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/leisure"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/resturant"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/resturant" />
+
+        <!-- Additional Image Buttons -->
+        <ImageButton
+            android:id="@+id/appliances"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/appliances" />
+
+        <ImageButton
+            android:id="@+id/clothes"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/clothes" />
+
+
+    </LinearLayout>
+    <TextView
+        android:id="@+id/faviourates"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout3"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:text="Favorites"
+        android:textColor="#181818"
+        android:textSize="28sp"
+        android:textStyle="normal" />
+
+    <ImageButton
+        android:id="@+id/myIconbutton4"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_below="@id/linearLayout3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitCenter"
+        android:layout_marginEnd="47dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/right_arrow" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/faviourates"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="2dp"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/vacation"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/vacation" />
+
+        <!-- Additional Image Buttons -->
+        <ImageButton
+            android:id="@+id/add1"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/add" />
+
+        <ImageButton
+            android:id="@+id/add2"
+            android:layout_width="86dp"
+            android:layout_height="83dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="6dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/add" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- CalendarView -->
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:background="@android:color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/calendarView"
+        android:background="@drawable/rounded_top_background"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <!-- Text View for "Bill" -->
+        <TextView
+            android:id="@+id/bill_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/calendarView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:text="Bill"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <!-- Text View for "Reminders" -->
+        <TextView
+            android:id="@+id/reminders_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bill_text"
+            android:layout_centerHorizontal="true"
+            android:text="Reminders"
+            android:layout_marginBottom="20dp"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold" />
+
+        <!-- Text input for bill name -->
+        <EditText
+            android:id="@+id/editTextBillName"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="    Enter Reminder Name"
+            android:inputType="text"
+            android:background="@drawable/rounded_background" />
+
+        <!-- Radio group for manual or automatic -->
+        <RadioGroup
+            android:id="@+id/radioGroupManualAuto"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rounded_background"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/radioButtonManual"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2C14DD"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="Manual" />
+
+            <View
+                android:layout_width="60dp"
+                android:layout_height="match_parent"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonAutomatic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#2C14DD"
+                android:textStyle="bold"
+                android:textSize="25sp"
+                android:text="Automatic" />
+        </RadioGroup>
+
+        <!-- Text input for amount of money -->
+        <EditText
+            android:id="@+id/editTextAmount"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:hint="Enter Amount in Rs."
+            android:inputType="numberDecimal"
+            android:background="@drawable/rounded_background"
+            android:layout_marginTop="10dp" />
+
+        <!-- Save button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/saveButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Save"
+            android:background="@drawable/rounded_background"
+            android:onClick="onSaveButtonClick" />
+
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Transactions TextView -->
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Analytics on Income"
+        android:textAlignment="center"
+        android:textColor="#2C14DD"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/pieChart_view"
+        android:layout_width="match_parent"
+        android:layout_height="398dp"
+        android:textSize="30sp"
+        />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transactions"
+        android:textColor="#2C14DD"
+        android:textSize="20sp" />
+
+    <!-- ListView for Transaction Items -->
+    <ListView
+        android:id="@+id/listViewIncome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="3dp" />
+
+</LinearLayout>

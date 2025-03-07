@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Your Bill Reminder Image -->
+    <ImageView
+        android:id="@+id/your_bill_reminder_image"
+        android:layout_width="100dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:src="@drawable/your_bill_reminder"
+        android:background="@android:color/white" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/your_bill_reminder_image"
+        android:background="@drawable/rounded_top_background"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp">
+
+        <TextView
+            android:id="@+id/Your_Bill_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Your Bill"
+            android:layout_marginStart="80dp"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/Reminder_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reminders"
+            android:layout_marginStart="60dp"
+            android:textColor="@android:color/white"
+            android:textSize="50sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/text_bill_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:text="Bill Name: " />
+
+        <!-- Reminder Name -->
+        <TextView
+            android:id="@+id/text_reminder_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:text="Reminder Date: " />
+
+        <!-- Amount -->
+        <TextView
+            android:id="@+id/text_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:text="Amount: " />
+
+        <!-- Manual/Automatic -->
+        <TextView
+            android:id="@+id/text_manual_automatic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textSize="25sp"
+            android:textColor="@android:color/white"
+            android:text="Manual/Automatic: " />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_pay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:textSize="25sp"
+            android:background="@drawable/activity_budget_button"
+            android:text="Pay Now" />
+
+    </LinearLayout>
+
+</RelativeLayout>

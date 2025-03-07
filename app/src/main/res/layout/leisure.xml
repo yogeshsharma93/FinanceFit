@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leisure"
+            android:id="@+id/leisure"
+            android:textSize="32sp"
+            android:textStyle="bold"
+            android:textColor="#FF0000FF"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="9dp"
+            android:layout_marginLeft="25dp"/>
+
+        <ImageButton
+            android:id="@+id/myIconButton"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginStart="25dp"
+            android:background="@android:color/transparent"
+            android:scaleType="fitCenter"
+            android:src="@drawable/back_arrow"
+            android:onClick="goback"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/car"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/rtine"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="5dp"
+            android:onClick="expand">
+
+            <LinearLayout
+                android:id="@+id/billslayout"
+                android:layout_width="339dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/bills_image" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Resturant"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/bill_Radio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOption1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="Electricity" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOption2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25dp"
+                        android:text="Water" />
+
+
+                    <!-- Add more radio buttons as needed -->
+
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/car"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="1dp"
+            android:onClick="expand">
+
+            <LinearLayout
+                android:id = "@+id/servlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/servicing_image"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Appliances"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+
+                <RadioGroup
+                    android:id="@+id/serv_radio"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="48dp"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOption8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:text="Car" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOption9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:text="AC" />
+
+                    <RadioButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:text="Bike" />
+
+
+                    <!-- Add more radio buttons as needed -->
+
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_below="@+id/card1"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="10dp"
+            app:contentPadding="10dp"
+            android:onClick="expand">
+
+            <LinearLayout
+                android:id = "@+id/gymlayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <ImageView
+                        android:layout_width="45dp"
+                        android:layout_height="45dp"
+                        android:src="@drawable/gym_image"
+                        android:scaleType="fitCenter"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="1dp"
+                        android:text="Clothes"
+                        android:textSize="25sp" />
+
+                </LinearLayout>
+                <RadioGroup
+                    android:layout_marginLeft="48dp"
+                    android:id="@+id/gym"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOption40"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:text="Membershp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButtonOption41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="25sp"
+                        android:text="Protien" />
+
+
+                    <!-- Add more radio buttons as needed -->
+
+                </RadioGroup>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

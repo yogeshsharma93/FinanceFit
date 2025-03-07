@@ -1,14 +1,152 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".BudgetFragment">
+    android:paddingTop="32dp"
+    android:paddingStart="15dp"
+    android:paddingEnd="15dp"
+    android:background="#FFFFFF">
 
-    <!-- TODO: Update blank fragment layout -->
+    <!-- Page title -->
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:id="@+id/title_manage_budget"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/page_heading_1"
+        android:textStyle="bold"
+        android:textSize="32sp"
+        android:textColor="#432DEC"
+        android:layout_centerHorizontal="true"
+        android:padding="25dp"/>
 
-</FrameLayout>
+    <!-- Buttons for menu options -->
+    <LinearLayout
+        android:id="@+id/menu_buttons_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_manage_budget"
+        android:orientation="vertical">
+
+
+        <!-- My Income button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_my_income"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/my_income"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#432DEC"
+            android:drawableStart="@drawable/my_income"
+            android:background="@drawable/activity_budget_button"
+            android:padding="20dp"/>
+
+        <!-- Add some space here -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <!-- My Income button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_budget_planning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/budget_planning"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#432DEC"
+            android:drawableStart="@drawable/budget_planning"
+            android:background="@drawable/activity_budget_button"
+            android:padding="20dp"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <!-- Bill Reminders button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_bill_reminders"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/bill_reminders"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#432DEC"
+            android:drawableStart="@drawable/bill_reminders"
+            android:background="@drawable/activity_budget_button"
+            android:padding="20dp"/>
+
+        <!-- Add some space here -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <!-- Goal Setting button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_goal_setting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/goal_setting"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#432DEC"
+            android:drawableStart="@drawable/goal_setting"
+            android:background="@drawable/activity_budget_button"
+            android:padding="20dp"/>
+
+        <!-- Add some space here -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <!-- Debts button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_debts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/debts"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#432DEC"
+            android:drawableStart="@drawable/debt"
+            android:background="@drawable/activity_budget_button"
+            android:padding="20dp"/>
+        <!-- Add some space here -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <!-- Savings Allocation button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_savings_allocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/savings_allocation"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#432DEC"
+            android:drawableStart="@drawable/savings_allocation"
+            android:background="@drawable/activity_budget_button"
+            android:padding="20dp"/>
+
+        <!-- Add some space here -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+
+        <!-- Networth Tracking button -->
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_networth_tracking"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/networth_tracking"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:textColor="#432DEC"
+            android:drawableStart="@drawable/networth_tracking"
+            android:background="@drawable/activity_budget_button"
+            android:padding="20dp"/>
+    </LinearLayout>
+
+</RelativeLayout>
