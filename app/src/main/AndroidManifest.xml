@@ -3,6 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_MEDIA_IMAGES" />
+
 
     <application
         android:allowBackup="true"
@@ -14,6 +17,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.FinanceFit"
         tools:targetApi="31">
+        <activity
+            android:name=".BillRemindersActivity2"
+            android:exported="false" />
+        <activity
+            android:name=".MyIncomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BudgetPlanningActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BillRemindersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoalSettingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Support"
+            android:exported="false" />
+        <activity
+            android:name=".profile1"
+            android:exported="false" />
+        <activity
+            android:name=".DynamicsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".IncomeAnalyticsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ExpensesAnalyticsActivity"
+            android:exported="false" />
         <activity
             android:name=".FrameLayout"
             android:exported="false" />
