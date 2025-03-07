@@ -12,4 +12,44 @@
     <string name="login_text">Hey you are back, fill in your details to get back in</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="update">Update</string>
+    <string name="your_address">Your Address</string>
+    <string name="e_mail">E-mail</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="your_name">Your Name</string>
+    <string name="profile_details">Profile Details</string>
+    <string name="logout">Logout</string>
+    <string name="support">Support</string>
+    <string name="settings">Settings</string>
+    <string name="notification">Notification</string>
+    <string name="Profiledetails">Profile Details</string>
+    <string name="hardikpandey_gmail_com">hardikpandey@gmail.com</string>
+    <string name="hardik_pandey">Hardik Pandey</string>
+    <string name="log_out">Logout</string>
+    <string name="support_">Support</string>
+    <string name="settings_">Settings</string>
+    <string name="notification_">Notification</string>
+    <string name="profile_details_">Profile Details</string>
+    <string name="hardikpandey_gmail_com_">hardikpandey@gmail.com</string>
+    <string name="hardik_pandey_">Hardik Pandey</string>
+    <string name="home">Home</string>
+    <string name="budget">Budget</string>
+    <string name="expenses">Expenses</string>
+    <string name="analytics">Analytics</string>
+    <string name="profile">Profile</string>
+    <string name="profile_image">Profile Image</string>
+
+    <string name="page_heading_1">Manage your Budget</string>
+    <string name="budget_planning">Budget Planning</string>
+    <string name="my_income">My Income</string>
+    <string name="bill_reminders">Bill Reminders</string>
+    <string name="goal_setting">Goal Setting</string>
+    <string name="savings_allocation">Savings Allocation</string>
+    <string name="debts">Debts</string>
+    <string name="networth_tracking">Networth Tracking</string>
+        <string name="text_bill_name_placeholder">Bill Name: %1$s</string>
+        <string name="text_reminder_date_placeholder">Reminder Date: %1$s</string>
+        <string name="text_manual_automatic_placeholder">Manual/Automatic: %1$s</string>
+        <string name="text_amount_placeholder">Amount: %1$s</string>
+
 </resources>
