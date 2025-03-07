@@ -52,27 +52,6 @@ FinanceFit/
   - MPAndroidChart (for analytics visualization)
 - **Development Tools**: Android Studio, Figma (for UI/UX design)
 
-## Roles of Project Members
-### 1. Hardik Pandey
-- Designed UI/UX for the expenses section.
-- Developed the expenses section.
-
-### 2. Yogesh Sharma
-- Designed Figma screens for splash screens, signup, login, user details, home, and notifications.
-- Developed splash screens, signup, login (with Firebase), home page, and navigation bar.
-
-### 3. Ayush Sengar
-- Designed Figma screens for the profile section.
-- Developed the profile section.
-
-### 4. Gagan Singhal
-- Designed Figma screens for the budget section.
-- Developed the budget section.
-
-### 5. Krishnansh Garg
-- Designed Figma screens for analytics.
-- Developed analytics pages, including graphs using MPAndroidChart.
-
 ## Screenshots
 ![image](https://github.com/user-attachments/assets/3992d9bd-fbe1-4420-bfb9-f2dc5666da15)
 ![image](https://github.com/user-attachments/assets/fec47ea0-e472-4f2d-a78b-6409e3616e72)
